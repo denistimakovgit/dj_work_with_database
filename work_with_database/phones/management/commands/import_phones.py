@@ -20,6 +20,6 @@ class Command(BaseCommand):
                 image=phone['image'],
                 release_date=phone['release_date'],
                 lte_exists=phone['lte_exists'],
-                skug=slugify(phone['name'])
+                slug=slugify(phone['name'])
             )
             phn.save()
